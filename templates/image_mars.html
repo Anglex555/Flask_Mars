@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привет, Марс!</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Жди нас, Марс!</h1>
+        <img src="{{ url_for('static', filename='images/mars_image.png') }}" alt="Картинка Марса">
+        <p>Вот она какая, красная планета</p>
+    </div>
+</body>
+</html>
