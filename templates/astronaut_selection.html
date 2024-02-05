@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета для соискателей места в миссии на Марс</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_regist.css') }}">
+</head>
+<body>
+    <div class="parallax">
+        <h1>Анкета для соискателей места в миссии на Марс</h1>
+        <div class="form-container">
+            <form action="/submit_form" method="post">
+                <label for="last_name">Фамилия:</label><br>
+                <input type="text" id="last_name" name="last_name"><br><br>
+
+                <label for="first_name">Имя:</label><br>
+                <input type="text" id="first_name" name="first_name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="education">Образование:</label><br>
+                <input type="text" id="education" name="education"><br><br>
+
+                <label for="profession">Выбор основной профессии:</label><br>
+                <input type="radio" id="engineer" name="profession" value="Инженер-исследователь">
+                <label for="engineer">Инженер-исследователь</label><br>
+
+                <input type="radio" id="pilot" name="profession" value="Пилот">
+                <label for="pilot">Пилот</label><br>
+
+                <input type="radio" id="constructor" name="profession" value="Конструктор космических кораблей">
+                <label for="constructor">Конструктор космических кораблей</label><br>
+
+                <input type="radio" id="exobiologist" name="profession" value="Экзобиолог">
+                <label for="exobiologist">Экзобиолог</label><br>
+
+                <input type="radio" id="terraforming-engineer" name="profession" value="Инженер по терраформированию">
+                <label for="terraforming-engineer">Инженер по терраформированию</label><br>
+
+                <input type="radio" id="radiation-specialist" name="profession" value="Специалист по радиационной защите">
+                <label for="radiation-specialist">Специалист по радиационной защите</label><br>
+
+                <input type="radio" id="astrogeologist" name="profession" value="Астрогеолог">
+                <label for="astrogeologist">Астрогеолог</label><br>
+
+                <input type="radio" id="cyber-engineer" name="profession" value="Киберинженер">
+                <label for="cyber-engineer">Киберинженер</label><br>
+
+                <input type="radio" id="climate-specialist" name="profession" value="Климатолог">
+                <label for="climate-specialist">Климатолог</label><br>
+
+                <input type="radio" id="life-support-engineer" name="profession" value="Инженер жизнеобеспечения">
+                <label for="life-support-engineer">Инженер жизнеобеспечения</label><br>
+
+                <input type="radio" id="rover-operator" name="profession" value="Оператор марсохода">
+                <label for="rover-operator">Оператор марсохода</label><br>
+
+                <input type="radio" id="drone-pilot" name="profession" value="Пилот дронов">
+                <label for="drone-pilot">Пилот дронов</label><br>
+
+                <input type="radio" id="navigator" name="profession" value="Штурман">
+                <label for="navigator">Штурман</label><br>
+                
+                <label for="gender">Пол:</label><br>
+                <input type="radio" id="male" name="gender" value="Мужской">
+                <label for="male">Мужской</label><br>
+                <input type="radio" id="female" name="gender" value="Женский">
+                <label for="female">Женский</label><br><br>
+
+                <label for="motivation">Мотивация:</label><br>
+                <textarea id="motivation" name="motivation" rows="6" cols="50"></textarea><br><br>
+
+                <label for="stay">Готовы ли остаться на Марсе?</label><br>
+                <input type="checkbox" id="stay" name="stay" value="Да">
+                <label for="stay">Да, готов</label><br><br>
+
+                <input type="submit" value="Отправить анкету">
+            </form>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
